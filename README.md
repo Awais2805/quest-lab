@@ -14,9 +14,13 @@ The overall goal is to learn and have fun with QuEST, alongside laying some foun
 The following diagram describes the VM setup I have been using on Azure. It comprises of a head node that controls and runs processes on a cluster of compute nodes (CPU VM instances at the moment but pending
 quota increase I may be able to get access to GPU VM types). 
 
-The CPU types I have been using so far are from the FX SKU and have 8 cores with 128GB RAM each. The largest statevector simulation I was able to successfully run with this set up was 35 qubits, where the 
-statevector was initialised to have a full random state and a H gate was applied to each qubit index. 
-*
+![image](docs/Azure-Compute-Cluster-Architecture-Diagram.png)
+
+The CPU types I have been using so far are from the FX SKU and have 8 cores with 128GB RAM each.
+
+ The largest statevector simulation I was able to successfully run with this set up was 35 qubits, where the 
+statevector was initialised to have a full random state and a H gate was applied to each qubit index sequentially. 
+
 
 # Goals
 
@@ -40,6 +44,7 @@ overhead in distributed systems
 # Status
 
 **Current: Setting up repo**
+
 *Next Steps: Init dev env* 
 
 
@@ -47,15 +52,20 @@ overhead in distributed systems
 
 This repo has used the following materials in its development: 
 
-**QuEST - Quantum Exact Simulation Toolkit**
-- qtechtheory (https://qtechtheory.org/)
-*(https://github.com/QuEST-Kit/QuEST
-https://quest.qtechtheory.org/about/*
 
+
+**QuEST: Quantum Exact Simulation Toolkit**
+-  qtechtheory (https://qtechtheory.org/)
+
+	- *(https://github.com/QuEST-Kit/QuEST*
+	- *https://quest.qtechtheory.org/about/)*
+
+
+----
 
 **Energy Efficieny of Quantum Statevector Simulation at Scale**
 - Jakub Adamski
 - James Peter Richings
 - Oliver Thomson Brown
-*(https://arxiv.org/pdf/2308.07402)*
+	- *(https://arxiv.org/pdf/2308.07402)*
 
