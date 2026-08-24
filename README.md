@@ -43,9 +43,11 @@ overhead in distributed systems
 
 # Status
 
-**Current: Setting up repo**
+**Current: Setting up circuits**
+- QFC - *done*
+- QPE - *next*
 
-*Next Steps: Init dev env* 
+*Next Steps: implement gate tracking and mpi ops tracking* 
 
 
 # Credits
