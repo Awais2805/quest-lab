@@ -1,0 +1,150 @@
+QuEST execution environment:
+  [precision]
+    qreal.................double (8 bytes)
+    qcomp.................std::__1::complex<double> (16 bytes)
+    qindex................long long int (8 bytes)
+    validationEpsilon.....1e-12
+  [compilation]
+    isMpiCompiled...........1
+    isGpuCompiled...........0
+    isOmpCompiled...........1
+    isCuQuantumCompiled.....0
+  [deployment]
+    isMpiEnabled............1
+    isGpuEnabled............0
+    isOmpEnabled............1
+    isCuQuantumEnabled......0
+    isGpuSharingEnabled.....0
+  [cpu]
+    numCpuCores.......8 per machine
+    numOmpProcs.......8 per machine
+    numOmpThrds.......8 per node
+    cpuMemory.........8 GiB per machine
+    cpuMemoryFree.....unknown
+  [gpu]
+    numGpus...........N/A
+    gpuDirect.........N/A
+    gpuMemPools.......N/A
+    gpuMemory.........N/A
+    gpuMemoryFree.....N/A
+    gpuCache..........N/A
+  [distribution]
+    isMpiGpuAware.....0
+    numMpiNodes.......1
+  [statevector limits]
+    minQubitsForMpi.............N/A
+    maxQubitsForCpu.............29
+    maxQubitsForGpu.............N/A
+    maxQubitsForMpiCpu..........29
+    maxQubitsForMpiGpu..........N/A
+    maxQubitsForMemOverflow.....59
+    maxQubitsForIndOverflow.....63
+  [density matrix limits]
+    minQubitsForMpi.............N/A
+    maxQubitsForCpu.............14
+    maxQubitsForGpu.............N/A
+    maxQubitsForMpiCpu..........14
+    maxQubitsForMpiGpu..........N/A
+    maxQubitsForMemOverflow.....29
+    maxQubitsForIndOverflow.....31
+  [statevector autodeployment]
+    8 qubits.....[omp] 
+  [density matrix autodeployment]
+    4 qubits.....[omp] 
+
+Using number of qubits: 6
+Initializing to zero state.
+Quantum register & parameters post state initialization:
+Qureg (6 qubit statevector, 64 qcomps, 1.102 KiB):
+    1  |0⟩
+    0  |1⟩
+    0  |2⟩
+    0  |3⟩
+    0  |4⟩
+    0  |5⟩
+    0  |6⟩
+    0  |7⟩
+    0  |8⟩
+    0  |9⟩
+    0  |10⟩
+    0  |11⟩
+    0  |12⟩
+    0  |13⟩
+    0  |14⟩
+    0  |15⟩
+    ⋮
+    0  |48⟩
+    0  |49⟩
+    0  |50⟩
+    0  |51⟩
+    0  |52⟩
+    0  |53⟩
+    0  |54⟩
+    0  |55⟩
+    0  |56⟩
+    0  |57⟩
+    0  |58⟩
+    0  |59⟩
+    0  |60⟩
+    0  |61⟩
+    0  |62⟩
+    0  |63⟩
+
+Qureg:
+  [deployment]
+    isMpiEnabled.....0
+    isGpuEnabled.....0
+    isOmpEnabled.....0
+  [dimension]
+    isDensMatr.....0
+    numQubits......6
+    numCols........N/A
+    numAmps........2^6 = 64
+  [distribution]
+    numNodes.....N/A
+    numCols......N/A
+    numAmps......N/A
+  [memory]
+    cpuAmps...........1024 bytes
+    gpuAmps...........N/A
+    cpuCommBuffer.....N/A
+    gpuCommBuffer.....N/A
+    globalTotal.......1024 bytes
+
+Applying full QFT on all qubits.
+Quantum register post QFT application:
+Qureg (6 qubit statevector, 64 qcomps, 1.102 KiB):
+    0.125  |0⟩
+    0.125  |1⟩
+    0.125  |2⟩
+    0.125  |3⟩
+    0.125  |4⟩
+    0.125  |5⟩
+    0.125  |6⟩
+    0.125  |7⟩
+    0.125  |8⟩
+    0.125  |9⟩
+    0.125  |10⟩
+    0.125  |11⟩
+    0.125  |12⟩
+    0.125  |13⟩
+    0.125  |14⟩
+    0.125  |15⟩
+      ⋮
+    0.125  |48⟩
+    0.125  |49⟩
+    0.125  |50⟩
+    0.125  |51⟩
+    0.125  |52⟩
+    0.125  |53⟩
+    0.125  |54⟩
+    0.125  |55⟩
+    0.125  |56⟩
+    0.125  |57⟩
+    0.125  |58⟩
+    0.125  |59⟩
+    0.125  |60⟩
+    0.125  |61⟩
+    0.125  |62⟩
+    0.125  |63⟩
+

@@ -32,14 +32,16 @@ FetchContent_MakeAvailable(QuEST)
 # set root experiments dir
 set(EXPERIMENTS_DIR ${CMAKE_CURRENT_SOURCE_DIR}/experiments)
 
-# compile all circuit libraries available
+# compile all circuit exec/libraries available
 file(GLOB CIRCUIT_SOURCES CONFIGURE_DEPENDS ${EXPERIMENTS_DIR}/circuits/*.c)
-if(CIRCUIT_SOURCES)
-    add_library(circuits STATIC ${CIRCUIT_SOURCES})
-    target_include_directories(circuits PUBLIC ${EXPERIMENTS_DIR}/circuits)
-    target_link_libraries(circuits PUBLIC QuEST::QuEST)
-    target_compile_options(circuits PRIVATE -Wall -Wextra)
-endif()
+foreach(src ${CIRCUIT_SOURCES})
+    get_filename_component(name ${src} NAME_WE)
+    add_executable(${name}  ${src})
+    target_link_libraries(${name} PRIVATE QuEST::QuEST)
+    target_compile_options(${name} PRIVATE -Wall -Wextra)
+    target_compile_definitions(${name} PRIVATE LOG_DIR="${EXPERIMENTS_DIR}/logs")
+
+endforeach()
 
 
 # compiles all benchmark executables available 
