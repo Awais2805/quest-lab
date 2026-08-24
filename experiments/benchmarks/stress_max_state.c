@@ -60,6 +60,8 @@ int main(int argc, char **argv) {
     reportScalar("calcTotalProb seconds", (qreal) (now_seconds() - t0));
     reportScalar("total probability (want 1)", prob);
 
+    
+
     destroyQureg(qureg);
     finalizeQuESTEnv();
     return 0;
